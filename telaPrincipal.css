@@ -1,0 +1,88 @@
+#sidebar{
+	margin-top: 5.0%;
+	width: 19%;
+	height: 88%;
+	position: absolute;
+	background: gray;
+	margin-left: -10px;
+	border-radius: 5px;
+	margin-bottom: 1%;
+
+}
+
+#sidebar p{
+	text-transform: uppercase;
+	margin-left: 3%;
+	margin-top: 7%;
+
+
+}
+
+#sidetitulo{
+	width: 100%;
+	height: 8%;
+	background: black;
+	border-radius: 5px;
+}
+
+#sidetitulo p{
+	margin-left: 8%;
+	color: white;
+	margin-top: 0;
+	padding-top: 5%;
+	font-size: 20px;
+
+}
+.linha{
+	display: block;
+	margin-top: 10%;
+	width: 90%;
+	height: 2px;
+	background: white;
+	border-radius: 2px;
+	border-style: none;
+
+}
+
+#pesqNome{
+	margin-left: 3%;
+	position: absolute;
+	background: #5795cd;
+	margin-top: -3%;
+	height: 5%;
+	width: 90%;
+	border-radius: 5px;
+	border-style: none;
+	color: white;
+	padding-left: 10px;
+
+}
+
+#pesqNome::placeholder{
+	color: white;
+
+
+}
+
+#carrosel{
+	margin-top: 5.0%;
+
+	margin-left: 18.85%;
+	position: absolute;
+	background: yellow;
+	height: 43%;
+	width: 80%;
+	
+}
+
+
+#medicos{
+	margin-top: 27%;
+
+	margin-left: 18.85%;
+	position: absolute;
+	background: red;
+	height: 44.6%;
+	width: 80%;
+	
+}
