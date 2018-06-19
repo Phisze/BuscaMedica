@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cadastro Medico</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>    
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css'>
+    <link rel='stylesheet prefetch' href='http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css'>
+    <link rel="stylesheet" href="stylesheets/style.css"> 
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/navbar.css" />
+
+  </head>
+
+<body>
+
+    <nav class="navbar">
+            <div class="nav-header">
+                <div class="nav-title">
+                    BuscaMedica
+                </div>
+            </div>
+            <div class="nav-form">
+                <form action="#" method="GET">
+                    <input type="text" name="pesquisa" />
+                    <input type="submit" value="Pesquisar" />
+                </form>
+            </div>
+            <div class="nav-links">
+                <a href="#" target="_blank">Início</a>
+                <a href="#" target="_blank">Sobre</a>
+                <a href="#" target="_blank">Contato</a>
+            </div>
+        </nav>
+
+  <div class="container">
+    <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+<fieldset>
+
+<!-- Form Name -->
+<!--<legend>Contact Us Today!</legend>-->
+
+<!-- Text input-->
+<fieldset>
+    <legend>Usuario</legend>
+    <div class="form-group">
+      <label class="col-md-4 control-label">Nome</label>  
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+      <input  name="first_name" placeholder="Nome" class="form-control"  type="text">
+        </div>
+      </div>
+    </div>
+
+<div class="form-group">
+      <label class="col-md-4 control-label">CRM</label>  
+        <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+      <input name="crm" placeholder="CRM" class="form-control" type="text">
+        </div>
+      </div>
+    </div>
+
+    <!-- Text input-->
+           <div class="form-group">
+      <label class="col-md-4 control-label">E-Mail</label>  
+        <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+      <input name="email" placeholder="E-Mail" class="form-control"  type="text">
+        </div>
+      </div>
+    </div>
+
+    <!-- Text input-->
+           
+    <div class="form-group">
+      <label class="col-md-4 control-label">Telefone</label>  
+        <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+      <input name="phone" placeholder="37 3322-1212" class="form-control" type="text" OnKeyPress="formatar('## ####-####', this)">
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+  <label class="col-md-4 control-label">Site</label>  
+   <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+  <input name="website" placeholder="Site" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+
+    
+</fieldset>
+
+<!-- Text input-->
+<fieldset>
+    <legend>Endereço</legend>
+      <div class="form-group"> 
+  <label class="col-md-4 control-label">Estado</label>
+    <div class="col-md-4 selectContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+    <select name="state" class="form-control selectpicker" >
+      <option value=" " >Escolha seu estado</option>
+      <option value="AC">Acre</option>
+      <option value="AL">Alagoas</option>
+      <option value="AP">Amapá</option>
+      <option value="AM">Amazonas</option>
+      <option value="BA">Bahia</option>
+      <option value="CE">Ceará</option>
+      <option value="DF">Distrito Federal</option>
+      <option value="ES">Espírito Santo</option>
+      <option value="GO">Goiás</option>
+      <option value="MA">Maranhão</option>
+      <option value="MT">Mato Grosso</option>
+      <option value="MS">Mato Grosso do Sul</option>
+      <option value="MG">Minas Gerais</option>
+      <option value="PA">Pará</option>
+      <option value="PB">Paraíba</option>
+      <option value="PR">Paraná</option>
+      <option value="PE">Pernambuco</option>
+      <option value="PI">Piauí</option>
+      <option value="RJ">Rio de Janeiro</option>
+      <option value="RN">Rio Grande do Norte</option>
+      <option value="RS">Rio Grande do Sul</option>
+      <option value="RO">Rondônia</option>
+      <option value="RR">Roraima</option>
+      <option value="SC">Santa Catarina</option>
+      <option value="SP">São Paulo</option>
+      <option value="SE">Sergipe</option>
+      <option value="TO">Tocantins</option>
+    </select>
+  </div>
+</div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label">Cidade</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+  <input name="city" placeholder="Cidade" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label">Bairro</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+  <input name="neighborhood" placeholder="Bairro" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+ 
+<div class="form-group">
+  <label class="col-md-4 control-label">Rua</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+  <input name="street" placeholder="Rua" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+
+
+<!-- Select Basic -->
+   
+<div class="form-group">
+  <label class="col-md-4 control-label">Número</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+  <input name="number" placeholder="Numero" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label">Complemento</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+  <input name="address" placeholder="Complemento" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label">CEP</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+  <input name="cep" id="cep" placeholder="CEP" class="form-control" type="text" OnKeyPress="formatar('#####-###', this)">
+    </div>
+</div>
+</div>
+</fieldset>
+
+<fieldset>
+    <legend>Plano de Saúde</legend>
+    <div class="form-group">
+      <label class="col-md-4 control-label">Plano de Saúde</label>  
+        <div class="col-md-4 inputGroupContainer">
+        <div id="origem" class="input-group" title=" " >
+            <span class="input-group-addon"><i title="Aceita mais de um plano de saúde?" data-toggle="popover" data-placement="left" data-content="Clique no icone para adiciona-lo" id="add_field" class="glyphicon glyphicon-plus-sign"></i></span>
+            <input name="plan" placeholder="Plano de Saúde" class="form-control"  type="text">
+        </div>
+    </div>
+    </div>
+
+     <div class="form-group">
+      <label class="col-md-4 control-label">Provedor</label>  
+        <div class="col-md-4 inputGroupContainer">
+        <div id="origem1" class="input-group">
+            <span class="input-group-addon"><i id="add_field1" class="glyphicon glyphicon-plus-sign"></i></span>
+      <input name="provedor" placeholder="Provedor" class="form-control"  type="text">
+        </div>
+    </div>
+    </div>
+
+    <div class="form-group">
+      <label class="col-md-4 control-label">Desconto</label>  
+        <div class="col-md-4 inputGroupContainer">
+        <div id="origem2" class="input-group">
+            <span class="input-group-addon"><i id="add_field2" class="glyphicon glyphicon-usd"></i></span>
+      <input name="desconto" placeholder="Desconto" class="form-control"  type="text">
+        </div>
+    </div>
+    </div>
+</fieldset>
+
+ <fieldset>
+        <legend>Formação</legend>
+       <div class="form-group">
+        <label class="col-md-4 control-label">Título</label>  
+        <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-briefcase"></i></span>
+      <input name="titulo" placeholder="Mestre" class="form-control"  type="text">
+        </div>
+    </div>
+    </div>
+  <div class="form-group">
+    <label class="col-md-4 control-label">Faculdade</label>  
+        <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-briefcase"></i></span>
+      <input name="facul" placeholder="Faculdade" class="form-control"  type="text">
+        </div>
+    </div>
+    </div>
+     <div class="form-group">
+    <label class="col-md-4 control-label">Área de Atuação</label>  
+        <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-briefcase"></i></span>
+      <input name="area" placeholder="Área de Atuação" class="form-control"  type="text">
+        </div>
+    </div>
+    </div>
+    <div class="form-group">
+    <label class="col-md-4 control-label">Data de Formação</label>  
+        <div class="col-md-4 inputGroupContainer">
+        <div class="input-group" id="datePicker" name="datePicker">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+            <input type="text" class="form-control" name="date" placeholder="MM/YYYY" OnKeyPress="formatar('##/####', this)">
+    </div>
+    </div>
+</fieldset>
+    <fieldset>
+        <legend>Horarios</legend>
+        <div class="form-group">
+        <label class="col-md-4 control-label">Horario de Início</label>  
+        <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+      <input name="time" placeholder="Horario de Inicio" class="form-control"  type="time">
+        </div>
+    </div>
+    </div>
+     <div class="form-group">
+        <label class="col-md-4 control-label">Horario de Término</label>  
+        <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+      <input name="time" placeholder="Horario de Inicio" class="form-control"  type="time">
+        </div>
+    </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-md-4 control-label">Horario de Intervalo Início</label>  
+        <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+      <input name="time" placeholder="Horario de Inicio" class="form-control"  type="time">
+        </div>
+    </div>
+    </div>
+     <div class="form-group">
+        <label class="col-md-4 control-label">Horario de Intervalo Final</label>  
+        <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+      <input name="time" placeholder="Horario de Inicio" class="form-control"  type="time">
+        </div>
+    </div>
+    </div>
+      </fieldset>
+
+<!-- Success message -->
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label"></label>
+  <div class="col-md-4">
+      <button type="submit" class="btn btn-warning" >Cadastrar<span class="glyphicon glyphicon-send"></span></button>
+  </div>
+</div>
+<div class="alert alert-success" role="alert" id="success_message">Cadastrado com sucesso <i class="glyphicon glyphicon-thumbs-up"></i></div>
+
+
+</fieldset>
+</form>
+</div>
+    </div><!-- /.container -->
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js'></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js" type="text/javascript"></script>
+
+<!--<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+-->
+<!--Font Awesome (added because you use icons in your prepend/append)-->
+
+<!-- Inline CSS based on choices in "Settings" tab -->
+
+
+    <script  src="scripts/cadastro.js"></script>
+    <script src="scripts/navbar.js"></script>
+
+
+
+<script type="text/javascript"> 
+jQuery.noConflict();
+
+function formatar(mascara, documento){
+  var i = documento.value.length;
+  var saida = mascara.substring(0,1);
+  var texto = mascara.substring(i)
+  
+  if (texto.substring(0,1) != saida){
+            documento.value += texto.substring(0,1);
+  }
+}
+
+$(document).ready(function() {
+    // Associa o evento do popover ao clicar no link.
+    $('#add_field').popover({
+        //trigger: 'manual',
+        placement: 'top',
+        html: true,
+        title: 'O que é um site ou software responsivo?',
+        content: $('#div-popover').html() // Adiciona o conteúdo da div oculta para dentro do popover.
+    }).click(function(e) {
+        e.preventDefault();
+        // Exibe o popover.
+        $(this).popover('show');
+    }).popover('show');
+});;
+
+   // var newRow = document.createElement('tr');
+
+//http://www.guj.com.br/t/botao-para-adicionar-campos-ao-formulario-javascript-html-ou-php/282712/6
+//jQuery(function($){
+   //$("#data").mask("99/99/9999");
+  // $("#telefone").mask("(099) 9999-9999");
+   //$("#cpf").mask("999.999.999-99");
+   //$("#cep").mask("99999-999"); 
+   //$("#cnpj").mask("99.999.999/9999-99");
+   //$("#placa").mask("aaa - 9999"); 
+//r});
+</script> 
+
+
+</body>
+
+</html>
