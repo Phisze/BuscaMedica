@@ -1,42 +1,35 @@
 <!DOCTYPE html>
-<html lang="pt-br" >
-
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cadastro Medico</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>    
-    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
-    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css'>
-    <link rel='stylesheet prefetch' href='http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css'>
-    <link rel="stylesheet" href="../stylesheets/style.css"> 
-    <link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/navbar.css" />
-
-  </head>
-
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Cadastro Medico</title>
+		
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.min.js"
+			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>    
+		
+		<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+		<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css'>
+		<link rel='stylesheet prefetch' href='http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css'>
+		<link rel="stylesheet" href="../stylesheets/style.css"> 
+	</head>
 <body>
 
-    <nav class="navbar">
-            <div class="nav-header">
-                <div class="nav-title">
-                    BuscaMedica
-                </div>
-            </div>
-            <div class="nav-form">
-                <form action="#" method="GET">
-                    <input type="text" name="pesquisa" />
-                    <input type="submit" value="Pesquisar" />
-                </form>
-            </div>
-            <div class="nav-links">
-                <a href="#" target="_blank">Início</a>
-                <a href="#" target="_blank">Sobre</a>
-                <a href="#" target="_blank">Contato</a>
-            </div>
-        </nav>
+	<div id="navbar-load"></div>
+	<script>
+		$(document).ready(function () {
+			jQuery('#navbar-load').load('../components/navbar.html', function() {
+				console.log("Load was performed.");
+			});
+		});
+	</script>
 
-  <div class="container">
+  	<div class="container">
     <form class="well form-horizontal" action=" " method="post"  id="contact_form">
 <fieldset>
 
@@ -353,8 +346,7 @@
 <!-- Inline CSS based on choices in "Settings" tab -->
 
 
-    <script  src="scripts/cadastro.js"></script>
-    <script src="scripts/navbar.js"></script>
+    <script  src="../scripts/cadastro.js"></script>
 
 
 
