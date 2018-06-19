@@ -29,6 +29,18 @@ body {
     display: inline-block;
 }
 
+.navbar > .nav-form > form {
+    
+}
+
+.navbar > .nav-form > form > input[type="text"] {
+    width: 350px;
+}
+
+.navbar > .nav-form > form > input[type="submit"] {
+    width: 90px;
+}
+
 .navbar > .nav-links {
     display: inline;
     float: right;
