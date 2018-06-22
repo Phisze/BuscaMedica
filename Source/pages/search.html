@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Page Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link
+            rel="stylesheet"
+            type="text/css"
+            media="screen" href="../stylesheets/flexboxgrid.css" />
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-xs">
+                <div class="box">
+                    <link
+                        rel="stylesheet"
+                        type="text/css"
+                        media="screen"
+                        href="../stylesheets/navbar.css" />
+                    
+                    <nav class="navbar">
+                        <div class="nav-header">
+                            <div class="nav-title">
+                                BuscaMedica
+                            </div>
+                        </div>
+
+                        <div class="nav-links">
+                            <a href="search.html">Início</a>
+                            <a href="about.html">Sobre</a>
+                            <a href="contact.html">Contato</a>
+                        </div>
+                    </nav>
+                    
+                    <script src="../scripts/navbar.js"></script>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="height: 25px;"></div>
+
+        <form action="#">
+            <div class="row center-xs">
+                <div class="col-xs">
+                    <h1>Busca Médica</h1>
+                
+                    <input
+                        type="text"
+                        style="width: 350px"
+                        name="pesquisa" />
+                    
+                    <input
+                        type="submit"
+                        style="width: 125px"
+                        value="Pesquisar" />
+
+                    <a href="#" onclick="pAvancadaShow()">Filtro avançado</a>
+                </div>
+            </div>
+
+            <div class="row" style="height: 100px;"></div>
+
+            <div id="pAvancada" class="row" style="display: none;">
+                <div class="col-xs-1"></div>
+
+                <div class="col-xs-2">
+                    <fieldset style="width: 100%;">
+                        <legend>
+                            Área de atuação
+                        </legend>
+
+                        <label>Trabalha com</label>
+                        <select multiple  style="width: 100%;">
+                            <option>Opção 1</option>
+                            <option>Opção 2</option>
+                            <option>Opção 3</option>
+                        </select>
+                    </fieldset>
+                </div>
+
+                <div class="col-xs-2">
+                    <fieldset style="width: 100%;">
+                        <legend>
+                            Área de atuação
+                        </legend>
+
+                        <label>Trabalha com</label>
+                        <select multiple  style="width: 100%;">
+                            <option>Opção 1</option>
+                            <option>Opção 2</option>
+                            <option>Opção 3</option>
+                        </select>
+                    </fieldset>
+                </div>
+
+                <div class="col-xs-2">
+                    <fieldset style="width: 100%;">
+                        <legend>
+                            Área de atuação
+                        </legend>
+
+                        <label>Trabalha com</label>
+                        <select multiple  style="width: 100%;">
+                            <option>Opção 1</option>
+                            <option>Opção 2</option>
+                            <option>Opção 3</option>
+                        </select>
+                    </fieldset>
+                </div>
+
+                <div class="col-xs-2">
+                    <fieldset style="width: 100%;">
+                        <legend>
+                            Área de atuação
+                        </legend>
+
+                        <label>Trabalha com</label>
+                        <select multiple  style="width: 100%;">
+                            <option>Opção 1</option>
+                            <option>Opção 2</option>
+                            <option>Opção 3</option>
+                        </select>
+                    </fieldset>
+                </div>
+            </div>
+        </form>
+
+        <nav class="navbar" style="position: absolute; bottom: 0; background-color: dimgray;">
+            <div class="nav-links">
+                <a href="#">Minha conta</a>
+            </div>
+        </nav>
+
+        <script src="../scripts/util.js"></script>
+    </body>
+</html>
