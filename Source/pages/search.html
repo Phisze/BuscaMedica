@@ -3,46 +3,43 @@
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Page Title</title>
+        <title>Pesquisa | Busca Médica</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
+        <!--<link
+            rel="stylesheet"
+            type="text/css"
+            media="screen" href="../stylesheets/master.css" />-->
         <link
             rel="stylesheet"
             type="text/css"
             media="screen" href="../stylesheets/flexboxgrid.css" />
+
+        <script
+			src="https://code.jquery.com/jquery-3.3.1.min.js"
+			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous">
+        </script>
     </head>
     <body>
         <div class="row">
             <div class="col-xs">
                 <div class="box">
-                    <link
-                        rel="stylesheet"
-                        type="text/css"
-                        media="screen"
-                        href="../stylesheets/navbar.css" />
-                    
-                    <nav class="navbar">
-                        <div class="nav-header">
-                            <div class="nav-title">
-                                BuscaMedica
-                            </div>
-                        </div>
-
-                        <div class="nav-links">
-                            <a href="search.html">Início</a>
-                            <a href="about.html">Sobre</a>
-                            <a href="contact.html">Contato</a>
-                        </div>
-                    </nav>
-                    
-                    <script src="../scripts/navbar.js"></script>
+                    <div id="navbar-load"></div>
+                    <script>
+                        $(document).ready(function () {
+                            jQuery('#navbar-load').load('../components/navbar.html', function() {
+                                console.log("Load was performed.");
+                            });
+                        });
+                    </script>
                 </div>
             </div>
         </div>
 
         <div class="row" style="height: 25px;"></div>
 
-        <form action="#">
+        <form action="result.html" method="GET">
             <div class="row center-xs">
                 <div class="col-xs">
                     <h1>Busca Médica</h1>
@@ -130,7 +127,7 @@
 
         <nav class="navbar" style="position: absolute; bottom: 0; background-color: dimgray;">
             <div class="nav-links">
-                <a href="#">Minha conta</a>
+                <a href="register.html">Cadastrar</a>
             </div>
         </nav>
 

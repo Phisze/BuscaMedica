@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
-		<title>Cadastro Medico</title>
+		<title>Cadastro | Busca Médica</title>
 		
 		<script
 			src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -15,7 +15,11 @@
 		
 		<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
 		<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css'>
-		<link rel='stylesheet prefetch' href='http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css'>
+    <link rel='stylesheet prefetch' href='http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css'>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen" href="../stylesheets/master.css" />
 		<link rel="stylesheet" href="../stylesheets/style.css"> 
 	</head>
 <body>
@@ -322,7 +326,8 @@
 <div class="form-group">
   <label class="col-md-4 control-label"></label>
   <div class="col-md-4">
-      <button type="submit" class="btn btn-warning" >Cadastrar<span class="glyphicon glyphicon-send"></span></button>
+      <button type="submit" class="btn btn-warning" >Cadastrar&nbsp;<span class="glyphicon glyphicon-send"></span></button>
+      <p>Os dados serão analizados pela nossa equipe e aprovados caso tudo esteja de acordo</p>
   </div>
 </div>
 <div class="alert alert-success" role="alert" id="success_message">Cadastrado com sucesso <i class="glyphicon glyphicon-thumbs-up"></i></div>
@@ -391,7 +396,8 @@ $(document).ready(function() {
 //r});
 </script> 
 
-
+    <nav class="navbar" style="position: relative; bottom: 0; background-color: dimgray;">
+                
+    </nav>
 </body>
-
 </html>
