@@ -6,10 +6,16 @@
         <title>Perfil | Busca Médica</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <!--<link
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> <!-- CSS reset -->
+        <link rel="stylesheet" href="../stylesheets/faq.css">
+        <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+        <link href="../stylesheets/user.css" type="text/css" rel="stylesheet" media="all">
+
+        <link
             rel="stylesheet"
             type="text/css"
-            media="screen" href="../stylesheets/master.css" />-->
+            media="screen" href="../stylesheets/master.css"/>
         <link
             rel="stylesheet"
             type="text/css"
@@ -36,13 +42,103 @@
                 </div>
             </div>
         </div>
-
+        <br>
+        <br>
+        <br>
         <!-- Insira o conteúdo aqui -->
-
+         <div class="container">
+                <div class="col-md-4 header-left">
+                    <img src="../images/img1.jpg" alt=""/>
+                </div>
+                <div class="col-md-8 header-right">
+                    <h1 class="titulo">Christina Doe</h1>
+                    <h6 class="fonte2">Oftamologista</h6>
+                    <br>
+                     <ul id="basics" class="cd-faq-group">
+                        <li>
+                            <a class="cd-faq-trigger" href="#0"><b class="fonte1">ENDEREÇO</b></a>
+                            <div class="cd-faq-content">
+                              <h5 class="fonte2">
+                              <b> RUA:</b> Antonio Rodrigues Nunes Neto <br>
+                              <b> NUMERO:</b> 116 <br>
+                              <b> COMPL: </b>Apartamento 23 <br>
+                              <b> BAIIRO:</b> Bela Vista <br>
+                              <b> CIDADE:</b> Formiga <br>
+                              <b> ESTADO:</b> Minas Gerais
+                              </h5>
+                            </div> <!-- cd-faq-content -->
+                        </li>
+                    </ul>
+                     <ul id="basics" class="cd-faq-group">
+                        <li>
+                            <a class="cd-faq-trigger" href="#1"><b class="fonte1">CONTATO</b></a>
+                            <div class="cd-faq-content">
+                              <h5 class="fonte2">
+                               <b>TELEFONE:</b>  11 2222-3333<br>
+                               <b>E-MAIL: </b> <a href="mailto:example@mail.com"> mail@example.com</a><br>
+                               <b>SITE</b> <a href="http://w3layouts.com">www.myresume.com</a> <br>
+                             </h5>
+                            </div> <!-- cd-faq-content -->
+                        </li>
+                    </ul>
+                     <ul id="basics" class="cd-faq-group">
+                        <li>
+                            <a class="cd-faq-trigger" href="#2"><b class="fonte1">HORARIOS</b></a>
+                            <div class="cd-faq-content">
+                              <h5 class="fonte2">
+                               <b>ATENDIMENTO:</b>  11:00 às 22:00<br>
+                               <b>INTERVALO: </b> 13:00 às 15:00<br>
+                             </h5>
+                            </div> <!-- cd-faq-content -->
+                        </li>
+                    </ul>
+                    <ul id="basics" class="cd-faq-group">
+                        <li>
+                            <a class="cd-faq-trigger" href="#3"><b class="fonte1">PLANOS DE SAÚDE</b></a>
+                            <div class="cd-faq-content">
+                              <h5 class="fonte2">
+                                <table class="table" border='1'>
+                                    <tr>
+                                        <td><b>NOME</b></td>
+                                       <td><b>PROVEDOR</b></td>
+                                       <td><b>DESCONTO</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Unimed Araxa</td>
+                                        <td>Unimed</td>
+                                        <td>90%</td>
+                                    </tr>
+                                     <tr>
+                                        <td>Bradesco MG</td>
+                                        <td>Bradesco</td>
+                                        <td>50%</td>
+                                    </tr>
+                                </table>
+                              </h5>
+                          </div> <!-- cd-faq-content -->
+                        </li>
+                    </ul>
+                    <ul id="basics" class="cd-faq-group">
+                        <li>
+                            <a class="cd-faq-trigger" href="#4"><b class="fonte1">FORMAÇÃO</b></a>
+                            <div class="cd-faq-content">
+                              <h5 class="fonte2">
+                               <b>TITULO:</b> MESTRE<br>
+                               <b>FACULDADE: </b> UFMG<br>
+                               <b>DATA:</b> 06/1980 <br>
+                             </h5>
+                            </div> <!-- cd-faq-content -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
         <nav class="navbar" style="position: absolute; bottom: 0; background-color: dimgray;">
             
         </nav>
-
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script> <!-- Modernizr -->
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="../scripts/profile.js"></script>
         <script src="../scripts/util.js"></script>
     </body>
 </html>
