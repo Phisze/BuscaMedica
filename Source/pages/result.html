@@ -6,15 +6,21 @@
         <title>Pesquisa | Busca Médica</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <!--<link
+        <link
             rel="stylesheet"
             type="text/css"
-            media="screen" href="../stylesheets/master.css" />-->
+            media="screen" href="../stylesheets/master.css" />
         <link
             rel="stylesheet"
             type="text/css"
             media="screen" href="../stylesheets/flexboxgrid.css" />
 
+        <link rel="stylesheet" type="text/css" href="../stylesheets/telaPrincipal.css">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
+        <link rel="stylesheet" type="text/css" href="../stylesheets/sidebar.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> <!-- CSS reset -->
+        <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+        <link href="../stylesheets/user.css" type="text/css" rel="stylesheet" media="all">
         <script
 			src="https://code.jquery.com/jquery-3.3.1.min.js"
 			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -38,6 +44,92 @@
         </div>
 
         <!-- Insira o conteúdo aqui -->
+        <div id="sidebar">
+    <form>
+        <div class="sidebar">
+        <form class="" action="#" method="get">
+            
+            <div class="filter-section">
+                <div class="filter-title">
+                    <h1 class="titulo">Filtros</h1>
+                </div>
+                <div class="filter-content">
+                    <div class="filter-input">
+                    <label for="atuacao"><b class="fonte2">Área de atuação</b></label>
+                    <select name="atuacao" id="atuacao" multiple>
+                        <option class="fonte3" value="">Pediatra</option>
+                        <option class="fonte3" value="">Cardiologista</option>
+                        <option class="fonte3" value="">Urologista</option>
+                        <option class="fonte3" value="">Ginecologista</option>
+                        <option class="fonte3" value="">Ortopedista</option>
+                    </select>
+                </div>
+                <div class="filter-input">
+                    <label for="cidades"><b class="fonte2">Cidades atendidas</b></label>
+                    <select name="cidades" id="cidades" multiple>
+                        <option class="fonte3" value="">Formiga - MG</option>
+                        <option class="fonte3" value="">Divinópolis - MG</option>
+                    </select>
+                </div>
+                <div class="filter-input">
+                    <label for="planos"><b class="fonte2">Planos de saúde</b></label>
+                    <select name="planos" id="planos" multiple>
+                        <option class="fonte3" value="">IPSEMG</option>
+                        <option class="fonte3" "value="">UNIMED</option>
+                    </select>
+                </div>
+                <div class="filter-input">
+                    <label><b class="fonte2">Horários de atendimento</b></label>
+                    <fieldset>
+                        <table>
+                            <tr><td><input class="fonte3" type="checkbox" name="horario" /></td><td>7h - 12h</td></tr>
+                            <tr><td><input class="fonte3" type="checkbox" name="horario" /></td><td>12h - 16h</td></tr>
+                            <tr><td><input class="fonte3" type="checkbox" name="horario" /></td><td>16h - 20h</td></tr>
+                            <tr><td><input class="fonte3" type="checkbox" name="horario" /></td><td>Outros</td></tr>
+                        </table>
+                    </fieldset>
+                </div>
+                <!--<div class="filter-input">
+                    <label for="">Preço</label>
+                </div>-->
+                </div>
+            </div>
+
+            <input class="botaoPesquisa" type="submit" name="" value="Pesquisar" />
+        </form>
+    </div>
+
+    
+
+    </form>
+
+    </div>
+    <div id="medicos">
+        
+        <div class="container">
+            <br>
+            <fieldset>
+                <div class="col-md-2 header-left">
+                    <img src="../images/img1.jpg" alt=""/>
+                </div>
+                <div class="col-md-8 header-right">
+                    <h1 class="titulo"><a href="profile.html">Christina Doe</a></h1>
+                    <h6 class="fonte2">Oftamologista</h6>
+                    <br>
+                </div>
+            </fieldset>
+            <hr/>
+            <fieldset>
+                <div class="col-md-2 header-left">
+                    <img src="../images/img2.jpg" alt=""/>
+                </div>
+                <div class="col-md-8 header-right">
+                    <h1 class="titulo"><a href="#">Augusto Scalabrini</a></h1>
+                    <h6 class="fonte2">Pediatrista</h6>
+                    <br>
+                </div>
+            </fieldset>    
+         <br>
 
         <nav class="navbar" style="position: absolute; bottom: 0; background-color: dimgray;">
             

@@ -1,0 +1,70 @@
+html, body {
+	width: 100%;
+}
+
+.sidebar {
+	display: block;
+    width: 100%;
+    /*border: 3px solid #8199d1;*/
+}
+
+.filter-section {
+
+}
+
+.filter-title {    
+    margin: 0;
+    padding: 5px 0 5px 0;
+
+    background-color: #20b2aa;
+}
+
+.filter-title h1 {
+	margin: 0;
+	padding: 0;
+
+	text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 22pt;
+}
+
+.filter-content {
+	margin: 0;
+	/*background-color: #333333;*/
+}
+
+.filter-input {
+	margin-left: 5px;
+}
+
+.filter-input label {
+	display: block;
+
+	font-family: 'Ubuntu', sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+.filter-input input, select {
+	width: 97%;
+}
+
+.sidebar input[type="submit"] {
+	width: 100%;
+	height: 45px;
+
+	background-color: #008CBA;
+	border: none;
+	color: #ffffff;
+	font-size: 12pt;
+	font-weight: bold;
+
+	transition: background-color 0s;
+}
+.sidebar input[type="submit"]:hover {
+	background-color: #3a4e7c;
+}
+
+.filter-input span {
+	display: block;
+}
