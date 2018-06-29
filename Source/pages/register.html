@@ -21,14 +21,38 @@
 
 <body>
 
-  <div id="navbar-load"></div>
-  <script>
-    $(document).ready(function () {
-      jQuery('#navbar-load').load('../components/navbar.html', function () {
-        console.log("Load was performed.");
-      });
-    });
-  </script>
+  <link
+  rel="stylesheet"
+  type="text/css"
+  media="screen"
+  href="../stylesheets/navbar.css" />
+
+<nav class="navbar">
+  <div class="nav-header">
+      <div class="nav-title">
+          BuscaMedica
+      </div>
+  </div>
+  <div class="nav-form">
+      <form
+          action="#"
+          method="GET">
+          
+          <input
+              type="text"
+              name="pesquisa" />
+          <input
+              type="submit"
+              value="Pesquisar" />
+      </form>
+  </div>
+  <div class="nav-links">
+      <a href="search.html">Início</a>
+      <a href="contact.html">Contato</a>
+  </div>
+</nav>
+
+<script src="../scripts/navbar.js"></script>
 
   <div class="container">
     <form class="well form-horizontal" action=" " method="post" id="contact_form">
